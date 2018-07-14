@@ -1,0 +1,102 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.main {
+  height: 100%;
+  padding:30vh 5rem 5rem 5rem;
+  position: relative;
+}
+
+.connect{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  padding:2.5rem 5rem;
+
+  a{
+    text-decoration: none;
+    font-size: 2.4rem;
+    color:$black;
+    display: inline-block;
+    margin-right: 1.5rem;
+  }
+}
+
+.main-white{
+  @extend .main;
+  background: $white;
+}
+
+.main-bluejeans{
+  @extend .main;
+  background: $bluejeans-dark;
+}
+
+.main-grapefruit{
+  @extend .main;
+  background: $grapefruit-dark;
+}
+
+
+.main-mint{
+  @extend .main;
+  background: $mint-dark;
+}
+
+
+.main-sunflower{
+  @extend .main;
+  background: $sunflower-dark;
+}
+
+.avatar{
+  height: 10rem;
+  width: 10rem;
+  margin-bottom:2.5rem;
+  border-radius: 50%;
+  background-image: url('/images/me.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.title{
+  width:100%;
+  margin: 0 0 2.5rem 0;
+  font-size: 6.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  small{
+    display: block;
+    font-size: 2.8rem;
+    text-transform: lowercase;
+  }
+}
+
+.lead{
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+}
+
+.skills{
+  color:$white;
+}
+
+.skill{
+  width:5rem;
+  height: 5rem;
+  margin-right: 1.5rem;
+  background: $white;
+  border-radius: 50%;
+  overflow: hidden;
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.footer{
+  position: absolute;
+  bottom:5rem;
+  left:5rem;
+  right:5rem;
+}

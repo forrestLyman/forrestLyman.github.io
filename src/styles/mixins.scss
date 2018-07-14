@@ -1,0 +1,55 @@
+@mixin shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+@mixin shadowBottom {
+  box-shadow: 0 .5rem 1rem 0 rgba(0, 0, 0, 0.25), 0 1rem 5rem 0 rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+@function charcoal($level) {
+  @return darken($baseColor, percentage($level * 2 / 100));
+}
+
+@mixin background($level) {
+  background: charcoal($level);
+}
+
+@mixin mobile {
+  @media (min-width: #{$mobileWidth}) {
+    @content;
+  }
+}
+
+@mixin smallMobile {
+  @media (max-width: #{$smallMobleWidth}) {
+    @content;
+  }
+}
+
+
+@mixin largeMobile {
+  @media (min-width: #{$largeMobileWidth}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tabletWidth}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktopWidth}) {
+    @content;
+  }
+}
+
+@mixin largeDesktop {
+  @media (min-width: #{$largeDesktopWidth}) {
+    @content;
+  }
+}

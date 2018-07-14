@@ -1,0 +1,97 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.colorSelector{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 5rem;
+}
+
+.colorList{
+  display: flex;
+}
+
+.colorListHidden{
+  width:0;
+  overflow: hidden;
+  margin:0;
+}
+
+.colorButton{
+  width:5rem;
+  height: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin:0 1rem 0 0;
+  padding:0;
+  display: flex;
+  background: $darkgray-dark;
+  border:$darkgray-dark 5px solid;
+
+  strong{
+    display: block;
+    height: 5rem;
+    width:2.5rem;
+  }
+  em{
+    display: block;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}
+
+.colorLabel{
+  display: block;
+  font-size: 2.4rem;
+  line-height: 1;
+  height: 2.4rem;
+  border:none;
+  background: none;
+}
+
+.colorButton-white{
+  @extend .colorButton;
+  strong{
+    background: $white;
+  }
+  em{
+    background: $lightgray-dark;
+  }
+}
+.colorButton-bluejeans{
+  @extend .colorButton;
+  strong{
+    background: $bluejeans-dark;
+  }
+  em{
+    background: $bluejeans-light;
+  }
+}
+.colorButton-mint{
+  @extend .colorButton;
+  strong{
+    background: $mint-dark;
+  }
+  em{
+    background: $mint-light;
+  }
+}
+.colorButton-sunflower{
+  @extend .colorButton;
+  strong{
+    background: $sunflower-dark;
+  }
+  em{
+    background: $sunflower-light;
+  }
+}
+.colorButton-grapefruit{
+  @extend .colorButton;
+  strong{
+    background: $grapefruit-dark;
+  }
+  em{
+    background: $grapefruit-light;
+  }
+}

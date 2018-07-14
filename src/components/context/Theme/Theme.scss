@@ -1,0 +1,106 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+// white theme
+.background-light-white{
+  background: $white;
+}
+
+.background-dark-white{
+  background: $lightgray-dark;
+}
+
+.color-light-white{
+  color:$white;
+}
+
+.color-dark-white{
+  color: $lightgray-light;
+}
+
+.color-active-white{
+  color: $lightgray-dark;
+}
+
+// bluejeans theme
+.background-light-bluejeans{
+  background: $bluejeans-light;
+}
+
+.background-dark-bluejeans{
+  background: $bluejeans-dark;
+}
+
+.color-light-bluejeans{
+  color:$bluejeans-light;
+}
+
+.color-dark-bluejeans{
+  color: $bluejeans-dark;
+}
+
+.color-active-bluejeans{
+  color: $bluejeans-light;
+}
+
+// mint theme
+.background-light-mint{
+  background: $mint-light;
+}
+
+.background-dark-mint{
+  background: $mint-dark;
+}
+
+.color-light-mint{
+  color:$mint-light;
+}
+
+.color-dark-mint{
+  color: $mint-dark;
+}
+
+.color-active-mint{
+  color: $mint-light;
+}
+
+// sunflower theme
+.background-light-sunflower{
+  background: $sunflower-light;
+}
+
+.background-dark-sunflower{
+  background: $sunflower-dark;
+}
+
+.color-light-sunflower{
+  color:$sunflower-light;
+}
+
+.color-dark-sunflower{
+  color: $sunflower-dark;
+}
+
+.color-active-sunflower{
+  color: $sunflower-light;
+}
+
+// grapefruit theme
+.background-light-grapefruit{
+  background: $grapefruit-light;
+}
+
+.background-dark-grapefruit{
+  background: $grapefruit-dark;
+}
+
+.color-light-grapefruit{
+  color:$grapefruit-light;
+}
+
+.color-dark-grapefruit{
+  color: $grapefruit-dark;
+}
+.color-active-grapefruit{
+  color: $grapefruit-light;
+}

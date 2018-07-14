@@ -1,0 +1,63 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+$height: 100vh;
+$width: 100vw;
+
+.default {
+  position: absolute;
+  top:0;
+  left:0;
+  width: $width;
+  height: $height;
+  overflow: hidden;
+}
+
+.contentBody{
+  margin:0 auto;
+}
+
+.main{
+}
+
+.aside{
+  background: $darkgray-light;
+}
+
+@include tablet{
+  .contentBody{
+    height: 100vh;
+    display: flex;
+  }
+
+  .main{
+    flex: 1;
+    display: flex;
+  }
+
+  .aside{
+    flex: 1;
+    display: flex;
+  }
+
+  .col{
+    width: $tabletWidth / 2;
+  }
+
+  .spacer{
+    flex: 1;
+    background: rgba($black, 0.05);
+  }
+}
+
+@include desktop{
+  .col{
+    width: $desktopWidth / 2;
+  }
+}
+
+@include largeDesktop{
+  .col{
+    width: $largeDesktopWidth / 2;
+  }
+}
