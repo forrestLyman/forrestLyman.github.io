@@ -3,11 +3,12 @@
 
 .default {
   display: flex;
+  align-items: flex-start;
   a{
     text-decoration: none;
     font-size: 2.4rem;
     color:$black;
-    display: inline-block;
+    display: block;
     margin-right: 1.5rem;
   }
 }

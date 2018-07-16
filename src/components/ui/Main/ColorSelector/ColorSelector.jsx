@@ -31,7 +31,7 @@ export default class ColorSelector extends React.Component{
                                     <button
                                         className={styles.colorButton}
                                         key={key}
-                                        onClick={() => setTheme(themeKey)}
+                                        onClick={() => setTheme(themeKey, () => this.setState({open: false}))}
                                     >
                                         <strong className={colorTheme.background.dark}></strong>
                                         <em className={colorTheme.background.light}></em>

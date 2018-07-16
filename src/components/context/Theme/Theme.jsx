@@ -35,7 +35,7 @@ export class ThemeProvider extends React.Component {
         return `${className}-${theme}`;
     }
 
-    setTheme = (theme) => {
+    setTheme = (theme, callback) => {
         // default theme
         if(theme === null ) theme = this.state.current;
 
@@ -47,6 +47,9 @@ export class ThemeProvider extends React.Component {
         sessionStorage.setItem(themeKey, theme);
 
         this.setState({current: theme, theme: this.getTheme(theme)});
+        if(callback) {
+            callback();
+        }
     }
 
     getTheme = (theme) => {
