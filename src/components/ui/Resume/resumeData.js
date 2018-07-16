@@ -77,8 +77,8 @@ export default [
         description: "The community leaders website is a project which leads the organization's new corporate strategy to focus on group and community building.",
         highlights: [
             "I led development on their WordPress VIP based website",
-            "I developed the front end utilizing vanilla ES6 JavaScript modules with Babel, Gulp, and WebPack to create a lightweight cross browser front end without relying on any frameworks",
-            "I implemented custom build processes which automatically built and deployed assets to the WordPress VIP platform"
+            "We utilized vanilla ES6 JavaScript modules with Babel, Gulp, and WebPack to create a lightweight cross browser front end without relying on any frameworks",
+            "I implemented custom CI processes which automatically built and deployed assets to the WordPress VIP platform with Travis and the GitHub API"
         ],
         tech: [
             "WordPress VIP",
@@ -160,7 +160,7 @@ export default [
     {
         title: "Schoolzilla",
         client: "Schoolzilla",
-        role: "Lead Full Stack Developer\n",
+        role: "Lead Full Stack Developer",
         location: "Oakland, California",
         screenshot: "/images/projects/schoolzilla.png",
         from: "November 2012",
@@ -174,8 +174,73 @@ export default [
         tech: [
             "Zend Framework 2",
             "AWS",
-            "Custom API development",
             "Tableau data visualization",
+            "SAML"
+        ]
+    },
+    {
+        title: "SZFD",
+        client: "Schoolzilla",
+        role: " Lead API Developer",
+        location: "Oakland, California",
+        screenshot: "/images/projects/schoolzilla.png",
+        from: "November 2012",
+        to: "February 2014",
+        description: "I architected and developed an application which automated ingestion of millions of student records into the Schoolzilla data warehouse.",
+        highlights: [
+            "I developed a reusable framework utilizing the adapter pattern which enabled our team to write a simple data adapter for each new data source",
+            "We integrated with hundreds of APIs and file based data sources",
+            "We exposed these adapters as micro-services, simplifying integration as the startup grew to serve some of the largest school systems in the country",
+        ],
+        tech: [
+            "Zend Framework 2",
+            "Data Warehouse",
+            "ETL",
+            "Micro Services",
+        ]
+    },
+    {
+        title: "Pro Zend Framework CMS",
+        client: "Apress",
+        role: "Freelance Author",
+        location: "New York, New York",
+        screenshot: "/images/projects/apress.png",
+        from: "September 2008",
+        to: "October 2009",
+        description: "I wrote the book, Pro Zend Framework CMS, for Apress Publishing. The book starts with an overview of Zend Framework and then guides the reader through the process of building a simple content management system from start to finish.",
+        highlights: [
+            "I worked directly with the lead Zend Framework developer to ensure that I understood, followed and explained best practices.",
+            "I guided the readers through a hands on project, developing a complete custom CMS.",
+            "I balanced explaining high level MVC concepts as well as lower level Zend Framework implementation strategy.",
+        ],
+        tech: [
+            "Zend Framework 1",
+            "Technical Writing",
+            "CMS",
+            "MVC",
+            "EAV Data",
+        ]
+    },
+    {
+        title: "Digitalus CMS",
+        client: "Open Source",
+        role: "Project Lead",
+        location: "Global",
+        screenshot: "/images/projects/digitalus-cms.png",
+        from: "January 2007",
+        to: "November 2012",
+        description: "The Digitalus CMS project grew into a leading open source CMS with 80,000+ downloads and contributors that include the core Zend and PHP teams",
+        highlights: [
+            "I developed the second largest open source Zend Framework project (Magento is the first)",
+            "I built sites on Digitalus CMS that ranged from bootstrapped non profits to commercial enterprise sites that scaled to millions of daily views",
+            "I managed a distributed group of contributors that spanned the globe.",
+        ],
+        tech: [
+            "Zend Framework 1",
+            "Open Source",
+            "CMS",
+            "MVC",
+            "EAV Data",
         ]
     }
 ]

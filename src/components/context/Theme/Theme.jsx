@@ -46,7 +46,6 @@ export class ThemeProvider extends React.Component {
             return;
         }
         sessionStorage.setItem(themeKey, theme);
-        console.log(this.getTheme(theme));
 
         this.setState({current: theme, theme: this.getTheme(theme)});
     }

@@ -13,6 +13,7 @@ import {ThemeContext} from "components/context/Theme/Theme";
 
 import styles from './Main.scss';
 import {faPalette} from "@fortawesome/free-solid-svg-icons/index";
+import Skills from "../Skills/Skills";
 
 
 const Main = () => {
@@ -34,17 +35,7 @@ const Main = () => {
 
                     <p className={styles.lead}>I write expressive code that progressively grows your ideas into engaging digital experiences.</p>
 
-                    <div className={styles.skills}>
-                        <button className={cx(styles.skill, theme.color.light)}>
-                            <FontAwesomeIcon icon={faReact} />
-                        </button>
-                        <button className={cx(styles.skill, theme.color.light)}>
-                            <FontAwesomeIcon icon={faAngular} />
-                        </button>
-                        <button className={cx(styles.skill, theme.color.light)}>
-                            <FontAwesomeIcon icon={faNode} />
-                        </button>
-                    </div>
+                    <Skills />
                     <footer className={styles.footer}>
                         <ColorSelector/>
                     </footer>
