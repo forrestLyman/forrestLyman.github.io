@@ -2,7 +2,6 @@
  * Created by forrestlyman on 7/12/18
  */
 
-import cx from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 import styles from './ResumeItem.scss';

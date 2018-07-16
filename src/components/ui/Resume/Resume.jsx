@@ -2,14 +2,11 @@
  * Created by forrestlyman on 7/12/18
  */
 
-import PropTypes from 'prop-types';
 import React from 'react';
-
 import ResumeData from './resumeData';
-import ResumeItem from './ResumeItem/ResumeItem';
-
-import styles from './Resume.scss';
 import ResumeDetail from "./ResumeDetail/ResumeDetail";
+import ResumeItem from './ResumeItem/ResumeItem';
+import styles from './Resume.scss';
 
 export default class Resume extends  React.Component {
     constructor(props) {
