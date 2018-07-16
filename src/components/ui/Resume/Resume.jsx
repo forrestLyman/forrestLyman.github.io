@@ -12,7 +12,7 @@ export default class Resume extends  React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            current: ResumeData[3]
+            current: false
         }
     }
 

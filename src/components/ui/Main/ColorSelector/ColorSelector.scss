@@ -8,8 +8,8 @@
   margin:0 .5rem 0 0;
   padding:0;
   display: flex;
-  background: $darkgray-light;
-  border:$darkgray-light 5px solid;
+  @include background(1);
+  border:none;
 
   strong{
     display: block;
@@ -85,15 +85,17 @@
 .colorList{
   display: flex;
   position: absolute;
-  top:2.8rem;
+  top:0rem;
   right:0;
   padding:1.5rem;
   width:100%;
-  background: darken($darkgray-dark, .15);
+  @include background(5);
+  transition: height .25s ease-out;
 }
 
 .colorListHidden{
   width:0;
+  height: 0;
   overflow: hidden;
   margin:0;
 }

@@ -54,8 +54,8 @@ export default [
         to: "May 2018",
         description: "I developed this website with Haus for GGV, a leader in global venture capital with a focus on the tech industry.",
         highlights: [
-            "I built a React / NextJS based application that can render on the browser or Express server for SEO",
-            "I developed a custom Express / NextJS server to handle our unique needs while leveraging the core NextJS functionality",
+            "We built a React / NextJS based application that can render on the browser or Express server for SEO + caching",
+            "We developed a custom Express / NextJS server to handle our unique needs while leveraging the core NextJS functionality",
             "I integrated the site with the Contentful CMS API for the back end"
         ],
         tech: [

@@ -3,6 +3,7 @@
 
 .list {
   width:100vw;
+  @include background(3)
 }
 
 @include tablet{

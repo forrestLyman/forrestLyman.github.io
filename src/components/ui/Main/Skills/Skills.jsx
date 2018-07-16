@@ -39,6 +39,12 @@ export default class Skills extends React.Component {
         )
     }
 
+    title = () => {
+        return (
+            <h2 className={styles.title}>Forrest Lyman<small>creative fullstack developer</small></h2>
+        )
+    }
+
     reactSkill = (theme) => {
         const active = this.state.detail === 'react';
         return (
@@ -53,6 +59,8 @@ export default class Skills extends React.Component {
                             more options than a more comprehensive framework like Angular, making it a perfect
                             choice for more creative applications and websites.
                         </p>
+
+                        {this.title()}
                     </div>
                 </div>
             </div>
@@ -71,6 +79,7 @@ export default class Skills extends React.Component {
                         <h2 className={theme.color.dark}>Angular</h2>
                         <p>I focused exclusively on Angular and TypeScript development for a number of years, working
                             with Angular 1-5 on a daily basis. Its an amazing platform for building enterprise browser applications.</p>
+                        {this.title()}
                     </div>
                 </div>
             </div>
@@ -91,6 +100,7 @@ export default class Skills extends React.Component {
                             I always try to utilize core HTML5 / JavaScript functionality whenever posssible since it
                             makes the code much lighter, more performant, and easier to integrate.
                         </p>
+                        {this.title()}
                     </div>
                 </div>
             </div>
@@ -111,6 +121,7 @@ export default class Skills extends React.Component {
                         I develop in the browser, then move more expensive operations back to the API. Using one language for both
                             makes this exponentially easier.
                         </p>
+                        {this.title()}
                     </div>
                 </div>
 
@@ -133,6 +144,7 @@ export default class Skills extends React.Component {
                             I have years of experience integrating with client workflow. When its my choice I use a combination of Jira, Trello,
                             GitFlow, Scrum, Kanban, Travis &amp; Jenkins, choosing based on the size of the team and complexity of the project.
                         </p>
+                        {this.title()}
                     </div>
                 </div>
             </div>
