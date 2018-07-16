@@ -17,14 +17,14 @@
 .detailOpen{
   @extend .detail;
   position: absolute;
-  top:6.5rem;
+  bottom:6rem;
   left:0;
-  right: 0;
-  width:100%;
+  right:0;
+  margin:0 -2.5rem;
+  width:100vw;
+  height: 50vh;
   visibility: visible;
   opacity: 1;
-  height: auto;
-  transition: opacity .75s ease-out;
   h2{
     margin: 0 0 1rem 0;
   }
@@ -33,20 +33,6 @@
     margin: 0 0 1.5rem 0;
     color: $darkgray-light;
   }
-}
-
-@include tablet{
-  .skill{
-    button{
-      width:5rem;
-      height: 5rem;
-      margin-right: 1.5rem;
-      font-size: 2.8rem;
-      text-align: center;
-      padding-top:.2rem;
-    }
-  }
-
 }
 
 .skills{
@@ -59,7 +45,7 @@
   button{
     width:4rem;
     height: 4rem;
-    margin-right: 1.5rem;
+    margin: 0 .5rem;
     background: $black;
     border: none;
     border-radius: 50%;
@@ -75,4 +61,18 @@
   button{
     background: $white;
   }
+}
+
+@include tablet{
+  .skill{
+    button{
+      width:5rem;
+      height: 5rem;
+      margin-right: 1.5rem;
+      font-size: 2.8rem;
+      text-align: center;
+      padding-top:.2rem;
+    }
+  }
+
 }
