@@ -1,6 +1,11 @@
 @import '../../../../styles/variables';
 @import '../../../../styles/mixins';
 
+.header{
+  display: flex;
+  align-items: flex-end;
+}
+
 .resumeItem {
   padding:2.5rem;
   border-bottom: $darker 1px solid;
@@ -22,7 +27,3 @@
   }
 }
 
-.header{
-  display: flex;
-  align-items: flex-end;
-}

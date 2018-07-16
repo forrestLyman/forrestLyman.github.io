@@ -2,13 +2,12 @@
  * Created by forrestlyman on 7/12/18
  */
 import cx from 'classnames';
+import { faChevronRight, faCheck, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronRight, faCheck, faPlusSquare, faMinusSquare, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
 import PropTypes from 'prop-types';
 import React from 'react';
 import styles from './ResumeDetail.scss';
 import {ThemeContext} from "components/context/Theme/Theme";
-import {faTimes} from "@fortawesome/free-solid-svg-icons/index";
 
 class ResumeDetail extends React.Component {
     constructor(props) {

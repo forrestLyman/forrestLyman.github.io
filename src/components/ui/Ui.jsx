@@ -2,12 +2,12 @@
  * Created by forrestlyman on 7/13/18
  */
 
-import React from 'react';
-import PropTypes from 'prop-types';
 import cx from 'classnames';
-import styles from './Ui.scss';
 import Main from './Main/Main';
+import PropTypes from 'prop-types';
+import React from 'react';
 import Resume from "./Resume/Resume";
+import styles from './Ui.scss';
 import {ThemeProvider, ThemeContext} from "components/context/Theme/Theme";
 
 export default class Ui extends React.Component {
