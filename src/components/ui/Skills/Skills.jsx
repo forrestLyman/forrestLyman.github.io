@@ -26,7 +26,7 @@ export default class Skills extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            detail: 'node'
+            detail: false
         }
         this.setWrapperRef = this.setWrapperRef.bind(this);
         this.handleClickOutside = this.handleClickOutside.bind(this);
@@ -64,8 +64,9 @@ export default class Skills extends React.Component {
                     <div className={styles.skills} ref={this.setWrapperRef}>
                         {this.reactSkill(theme)}
                         {this.angularSkill(theme)}
+                        {this.htmlSkill(theme)}
                         {this.nodeSkill(theme)}
-                        {this.teamSkill(theme)}
+                        {this.workflowSkill(theme)}
 
 
                     </div>
@@ -75,12 +76,13 @@ export default class Skills extends React.Component {
     }
 
     reactSkill = (theme) => {
+        const active = this.state.detail === 'react';
         return (
-            <div className={styles.skill}>
+            <div className={active ? styles.skillActive : styles.skill}>
                 <button className={theme.color.light} onClick={() => this.setView('react')}>
                     <FontAwesomeIcon icon={faReact} />
                 </button>
-                <div className={this.state.detail === 'react' ? styles.detailOpen : styles.detail}>
+                <div className={active ? styles.detailOpen : styles.detail}>
                     <div className={styles.detailBody}>
                         <h2 className={theme.color.dark}>React</h2>
                         <p>I'm currently using React for most of my work. Its unopinionated approach gives you a lot
@@ -94,16 +96,37 @@ export default class Skills extends React.Component {
     }
 
     angularSkill = (theme) => {
+        const active = this.state.detail === 'angular';
         return (
-            <div className={styles.skill}>
+            <div className={active ? styles.skillActive : styles.skill}>
                 <button className={theme.color.light} onClick={() => this.setView('angular')}>
                     <FontAwesomeIcon icon={faAngular} />
                 </button>
-                <div className={this.state.detail === 'angular' ? styles.detailOpen : styles.detail}>
+                <div className={active ? styles.detailOpen : styles.detail}>
                     <div className={styles.detailBody}>
                         <h2 className={theme.color.dark}>Angular</h2>
-                        <p>I focused exclusively on Angular and TypeScript development for a number of years, working on a daily basis
-                            with Angular 1-5. Its an amazing platform for building enterprise browser applications.</p>
+                        <p>I focused exclusively on Angular and TypeScript development for a number of years, working
+                            with Angular 1-5 on a daily basis. Its an amazing platform for building enterprise browser applications.</p>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+
+    htmlSkill = (theme) => {
+        const active = this.state.detail === 'html';
+        return (
+            <div className={active ? styles.skillActive : styles.skill}>
+                <button className={theme.color.light} onClick={() => this.setView('html')}>
+                    <FontAwesomeIcon icon={faHtml5} />
+                </button>
+                <div className={active ? styles.detailOpen : styles.detail}>
+                    <div className={styles.detailBody}>
+                        <h2 className={theme.color.dark}>HTML5</h2>
+                        <p>
+                            I always try to utilize core HTML5 / JavaScript functionality whenever posssible, since it
+                            makes the code much more performant, portable and easier to integrate.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -111,12 +134,13 @@ export default class Skills extends React.Component {
     }
 
     nodeSkill = (theme) => {
+        const active = this.state.detail === 'node';
         return (
-            <div className={styles.skill}>
+            <div className={active ? styles.skillActive : styles.skill}>
                 <button className={theme.color.light} onClick={() => this.setView('node')}>
                     <FontAwesomeIcon icon={faNode} />
                 </button>
-                <div className={this.state.detail === 'node' ? styles.detailOpen : styles.detail}>
+                <div className={active ? styles.detailOpen : styles.detail}>
                     <div className={styles.detailBody}>
                         <h2 className={theme.color.dark}>Node / Express</h2>
                         <p>JavaScript is my language of choice for custom API development, cloud functions, and server side rendering.
@@ -130,18 +154,20 @@ export default class Skills extends React.Component {
         )
     }
 
-    teamSkill = (theme) => {
+    workflowSkill = (theme) => {
+        const active = this.state.detail === 'workflow';
         return (
-            <div className={styles.skill}>
-                <button className={theme.color.light} onClick={() => this.setView('team')}>
+            <div className={active ? styles.skillActive : styles.skill}>
+                <button className={theme.color.light} onClick={() => this.setView('workflow')}>
                     <FontAwesomeIcon icon={faSitemap} />
                 </button>
-                <div className={this.state.detail === 'team' ? styles.detailOpen : styles.detail}>
+                <div className={active ? styles.detailOpen : styles.detail}>
+                    <div className={styles.tabArrow}></div>
                     <div className={styles.detailBody}>
-                        <h2 className={theme.color.dark}>React</h2>
-                        <p>I'm currently using React for most of my work. Its unopinionated approach gives you a lot
-                            more options than a more comprehensive framework like Angular, making it a perfect
-                            choice for creative applications.
+                        <h2 className={theme.color.dark}>Workflow</h2>
+                        <p>
+                            I have years of experience integrating with client workflow. When its my choice I use a combination of Jira, Trello,
+                            GitFlow, Scrum, Kanban, Travis &amp; Jenkins, choosing based on the size of the team and complexity of the project.
                         </p>
                     </div>
                 </div>
