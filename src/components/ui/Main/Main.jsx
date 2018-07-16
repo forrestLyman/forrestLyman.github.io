@@ -22,10 +22,10 @@ const Main = () => {
             {({theme}) => (
                 <main className={cx(styles.main, theme.background.dark)}>
                     <div className={styles.connect}>
-                        <a href="https://github.com/forrestLyman" target="_blank"> <FontAwesomeIcon icon={faGithub} /></a>
-                        <a href="https://www.linkedin.com/in/forrestlyman/" target="_blank"> <FontAwesomeIcon icon={faLinkedin} /></a>
-                        <a href="mailto: forrestswork@gmail.com" target="_blank"> <FontAwesomeIcon icon={faEnvelope} /></a>
-                        <a href="https://docs.google.com/document/d/1ToCkb-CMW_79QBJY2h8opyYt-QEjStrSDbnYTl3CLvo/edit?usp=sharing" target="_blank"> <FontAwesomeIcon icon={faCloudDownloadAlt} /></a>
+                        <a href="https://github.com/forrestLyman" rel="noopener noreferrer" target="_blank"> <FontAwesomeIcon icon={faGithub} /></a>
+                        <a href="https://www.linkedin.com/in/forrestlyman/" rel="noopener noreferrer" target="_blank"> <FontAwesomeIcon icon={faLinkedin} /></a>
+                        <a href="mailto: forrestswork@gmail.com" rel="noopener noreferrer" target="_blank"> <FontAwesomeIcon icon={faEnvelope} /></a>
+                        <a href="https://docs.google.com/document/d/1ToCkb-CMW_79QBJY2h8opyYt-QEjStrSDbnYTl3CLvo/edit?usp=sharing" rel="noopener noreferrer" target="_blank"> <FontAwesomeIcon icon={faCloudDownloadAlt} /></a>
                     </div>
                     <div className={styles.avatar} />
                     <h1 className={styles.title}>
