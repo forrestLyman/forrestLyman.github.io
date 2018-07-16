@@ -1,26 +1,41 @@
 @import '../../../../styles/variables';
 @import '../../../../styles/mixins';
 
+
 .detail{
-  height: 100%;
-  position: absolute;
-  bottom:0;
-  left:0;
-  right:0;
+  height: 100vh;
+  width:100%;
+  position: relative;
   background: darken($darkgray-dark, 5);
-  transition: height 500ms ease-out;
+}
+
+.detailWrapper{
+  position: fixed;
+  top:0;
+  right:0;
+  overflow: hidden;
+  width:0;
+  height: 100vh;
+  transition: width 500ms ease-out;
+}
+
+.detailWrapperOpen{
+  @extend .detailWrapper;
+  width:$desktopWidth/2;
 }
 
 .close{
   position: absolute;
   top:2.5rem;
   right:2.5rem;
-  z-index: 99;
-  background: none;
+  background: darken($darkgray-dark, 16);
   border: none;
   font-size: 3.2rem;
-  padding:0;
+  text-align: center;
   margin:0;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
   transition-delay: 500ms;
   transition-property: transform;
   transition-duration: 500ms;
@@ -32,13 +47,6 @@
   transition-delay: 500ms;
   transition-property: transform;
   transition-duration: 500ms;
-}
-
-.detailClosed{
-  @extend .detail;
-  height: 0;
-  overflow: hidden;
-  transition: height 500ms ease-out;
 }
 
 .header{
@@ -125,14 +133,15 @@
   position: absolute;
   height: 42vh;
   overflow: auto;
-  background: darken($darkgray-dark, 15);
+  background: darken($darkgray-dark, 8);
+  border-top: darken($darkgray-dark, 16) 2.5rem solid;
   color:$white;
-  padding:5rem;
   transition:top .25s ease-out;
 
   blockquote{
+    background: darken($darkgray-dark, 12);
     font-size: 2.1rem;
-    padding:0;
+    padding:2.5rem;
     margin:0;
     line-height: 1.75;
   }
@@ -145,12 +154,14 @@
 }
 
 .skills{
-  padding:2.5rem 1.5rem;
+  padding:2.5rem;
   margin:0;
   list-style: none;
+  overflow: auto;
   li{
     display: flex;
     margin-bottom: 1.5rem;
+    color:$mediumgray-light;
   }
 }
 

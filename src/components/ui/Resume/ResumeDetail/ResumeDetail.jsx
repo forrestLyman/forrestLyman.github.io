@@ -3,7 +3,7 @@
  */
 import cx from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faCheck, faPlusSquare, faMinusSquare, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight, faCheck, faPlusSquare, faMinusSquare, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
 import PropTypes from 'prop-types';
 import React from 'react';
 import styles from './ResumeDetail.scss';
@@ -20,16 +20,17 @@ class ResumeDetail extends React.Component {
 
     render (){
         const {item, onClose, open} = this.props;
+        console.log(open);
         const {detail} = this.state;
-        const className = open ? 'detail' : 'detailClosed';
+        const className = open ? styles.detailWrapperOpen : styles.detailWrapper;
         const iconClass = open ? styles.close : styles.open;
         return (
             <ThemeContext.Consumer>
                 {({theme}) => (
-                    <div className={styles.detailWrapper}>
-                        <div className={styles[className]}>
+                    <div className={className}>
+                        <div className={styles.detail}>
                             <button className={cx(iconClass, theme.color.light)} onClick={onClose}>
-                                <FontAwesomeIcon icon={faChevronDown} />
+                                <FontAwesomeIcon icon={faChevronRight} />
                             </button>
 
                             <div className={styles.header}>

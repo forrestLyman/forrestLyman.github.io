@@ -28,30 +28,6 @@ export default class Skills extends React.Component {
         this.state = {
             detail: false
         }
-        this.setWrapperRef = this.setWrapperRef.bind(this);
-        this.handleClickOutside = this.handleClickOutside.bind(this);
-    }
-
-    componentDidMount() {
-        document.addEventListener('mousedown', this.handleClickOutside);
-    }
-
-    componentWillUnmount() {
-        document.removeEventListener('mousedown', this.handleClickOutside);
-    }
-
-    setWrapperRef = (node) => {
-        this.wrapperRef = node;
-    }
-
-    /**
-     * Alert if clicked on outside of element
-     */
-    handleClickOutside = (event) => {
-        console.log('click');
-        if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
-            this.setView(false);
-        }
     }
 
     render() {
@@ -67,7 +43,6 @@ export default class Skills extends React.Component {
                         {this.htmlSkill(theme)}
                         {this.nodeSkill(theme)}
                         {this.workflowSkill(theme)}
-
 
                     </div>
                 )}
