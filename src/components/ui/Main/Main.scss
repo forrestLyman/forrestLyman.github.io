@@ -3,6 +3,7 @@
 
 .main {
   height: 100%;
+  width:100vw;
   padding:5rem;
   position: relative;
 }
@@ -88,4 +89,16 @@
   bottom:5rem;
   left:5rem;
   right:5rem;
+}
+
+@include tablet{
+  .main{
+    width: $tabletWidth / 2;
+  }
+}
+
+@include desktop{
+  .main{
+    width: $desktopWidth / 2;
+  }
 }

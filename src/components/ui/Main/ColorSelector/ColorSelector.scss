@@ -10,8 +10,11 @@
 .colorList{
   display: flex;
   position: absolute;
-  top:4.2rem;
-  right:4rem;
+  top:2.8rem;
+  right:0;
+  padding:1.5rem;
+  width:100%;
+  background: darken($darkgray-dark, .15);
 }
 
 .colorListHidden{
@@ -27,8 +30,8 @@
   margin:0 .5rem 0 0;
   padding:0;
   display: flex;
-  background: $darkgray-dark;
-  border:$darkgray-dark 5px solid;
+  background: $darkgray-light;
+  border:$darkgray-light 5px solid;
 
   strong{
     display: block;
