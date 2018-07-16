@@ -52,7 +52,7 @@ export default [
         screenshot: "/images/projects/ggvc.png",
         from: "February 2018",
         to: "May 2018",
-        description: "I developed the GGV website, a leader in global venture capital with a focus on the tech industry.",
+        description: "I developed this website with Haus for GGV, a leader in global venture capital with a focus on the tech industry.",
         highlights: [
             "I built a React / NextJS based application that can render on the browser or Express server for SEO",
             "I developed a custom Express / NextJS server to handle our unique needs while leveraging the core NextJS functionality",

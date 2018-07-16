@@ -1,5 +1,5 @@
-@import '../../../styles/variables';
-@import '../../../styles/mixins';
+@import '../../../../styles/variables';
+@import '../../../../styles/mixins';
 
 .colorSelector{
   display: flex;
@@ -10,6 +10,9 @@
 
 .colorList{
   display: flex;
+  position: absolute;
+  top:10rem;
+  right:4rem;
 }
 
 .colorListHidden{
@@ -19,6 +22,7 @@
 }
 
 .colorButton{
+  position: relative;
   width:5rem;
   height: 5rem;
   border-radius: 50%;

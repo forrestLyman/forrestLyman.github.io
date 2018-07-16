@@ -124,8 +124,8 @@ export default class Skills extends React.Component {
                     <div className={styles.detailBody}>
                         <h2 className={theme.color.dark}>HTML5</h2>
                         <p>
-                            I always try to utilize core HTML5 / JavaScript functionality whenever posssible, since it
-                            makes the code much more performant, portable and easier to integrate.
+                            I always try to utilize core HTML5 / JavaScript functionality whenever posssible since it
+                            makes the code much lighter, more performant, and easier to integrate.
                         </p>
                     </div>
                 </div>

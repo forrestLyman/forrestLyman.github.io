@@ -22,6 +22,8 @@ export default class ColorSelector extends React.Component{
             <ThemeContext.Consumer>
                 {({themes, setTheme, theme, getTheme}) => (
                     <div className={styles.colorSelector}>
+                        <button onClick={this.toggle} className={styles.colorLabel}>{<FontAwesomeIcon icon={faPalette} />}</button>
+
                         <div className={open ? styles.colorList : styles.colorListHidden}>
                             {themes.map((themeKey, key) => {
                                 const colorTheme = getTheme(themeKey);
@@ -37,7 +39,6 @@ export default class ColorSelector extends React.Component{
                                 )
                             })}
                         </div>
-                        <button onClick={this.toggle} className={styles.colorLabel}>{open ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faPalette} />}</button>
                     </div>
                 )}
             </ThemeContext.Consumer>
