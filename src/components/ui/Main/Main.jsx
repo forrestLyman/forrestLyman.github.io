@@ -19,15 +19,17 @@ const Main = () => {
             {({theme}) => (
                 <main className={cx(styles.main, theme.background.dark)}>
                     <Toolbar/>
-                    <div className={styles.avatar} />
-                    <h1 className={styles.title}>
-                        hi, i'm forrest!
-                        <small>creative fullstack developer</small>
-                    </h1>
+                    <div className={styles.mainContent}>
+                        <div className={styles.avatar} />
+                        <h1 className={styles.title}>
+                            hi, i'm forrest!
+                            <small>creative fullstack developer</small>
+                        </h1>
 
-                    <p className={styles.lead}>I write expressive code that progressively grows your ideas into engaging digital experiences.</p>
+                        <p className={styles.lead}>I write expressive code that progressively grows your ideas into engaging digital experiences.</p>
 
-                    <Skills />
+                        <Skills />
+                    </div>
                 </main>
             )}
         </ThemeContext.Consumer>
