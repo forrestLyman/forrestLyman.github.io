@@ -8,6 +8,7 @@
     font-size: 10px;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
   }
 
   *,
@@ -22,6 +23,8 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 1.4rem;
     overflow-x: hidden;
+    margin:0;
+    padding:0;
   }
 
   figure {
