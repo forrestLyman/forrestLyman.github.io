@@ -2,19 +2,11 @@
  * Created by forrestlyman on 7/14/18
  */
 
-// these are some common components that we use in almost every component
-// import Button from "components/ui/common/Button/Button";
-// import CbClient from 'services/CbClient';
-// import Container from 'components/ui/common/Container/Container';
-// import Overlay from 'components/ui/common/Overlay/Overlay';
-// import FaFacebook from 'react-icons/lib/fa/facebook';
-
 import React from 'react';
 import PropTypes from 'prop-types';
-import cx from 'classnames';
 import styles from './Skills.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faAngular, faNode, faReact, faHtml5, faSass} from "@fortawesome/free-brands-svg-icons/index";
+import {faAngular, faNode, faReact, faHtml5} from "@fortawesome/free-brands-svg-icons/index";
 import {faSitemap} from "@fortawesome/free-solid-svg-icons/index";
 import {ThemeContext} from "components/context/Theme/Theme";
 
@@ -31,9 +23,6 @@ export default class Skills extends React.Component {
     }
 
     render() {
-        const {className} = this.props;
-        const {detail} = this.state;
-        const style = cx(className, styles.default);
         return (
             <ThemeContext.Consumer>
                 {({theme}) => (

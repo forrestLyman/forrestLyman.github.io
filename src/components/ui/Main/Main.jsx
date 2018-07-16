@@ -3,12 +3,10 @@
  */
 
 import cx from 'classnames';
-import PropTypes from 'prop-types';
 import React from 'react';
 import {ThemeContext} from "components/context/Theme/Theme";
 
 import styles from './Main.scss';
-import {faPalette} from "@fortawesome/free-solid-svg-icons/index";
 import Skills from "./Skills/Skills";
 import Toolbar from "./Toolbar/Toolbar";
 

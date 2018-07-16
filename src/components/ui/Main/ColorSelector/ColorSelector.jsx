@@ -2,8 +2,7 @@
  * Created by forrestlyman on 7/12/18
  */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPalette, faTimes } from '@fortawesome/free-solid-svg-icons'
-import PropTypes from 'prop-types';
+import { faPalette } from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
 import styles from './ColorSelector.scss';
 import {ThemeContext} from "components/context/Theme/Theme";

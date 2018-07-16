@@ -4,9 +4,8 @@
 
 import ColorSelector from 'components/ui/Main/ColorSelector/ColorSelector';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faGithub, faLinkedin, faNpm, faAngular, faReact, faNode} from '@fortawesome/free-brands-svg-icons';
+import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faCloudDownloadAlt } from '@fortawesome/free-solid-svg-icons';
-import PropTypes from 'prop-types';
 import React from 'react';
 
 import styles from './Toolbar.scss';
@@ -23,7 +22,5 @@ const Toolbar = (props) => {
         </div>
     )
 }
-
-Toolbar.propTypes = {}
 
 export default Toolbar;
