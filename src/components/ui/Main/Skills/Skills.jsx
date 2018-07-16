@@ -2,12 +2,12 @@
  * Created by forrestlyman on 7/14/18
  */
 
-import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './Skills.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faAngular, faNode, faReact, faHtml5} from "@fortawesome/free-brands-svg-icons/index";
 import {faSitemap} from "@fortawesome/free-solid-svg-icons/index";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import PropTypes from 'prop-types';
+import React from 'react';
+import styles from './Skills.scss';
 import {ThemeContext} from "components/context/Theme/Theme";
 
 export default class Skills extends React.Component {

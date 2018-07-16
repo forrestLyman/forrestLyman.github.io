@@ -4,10 +4,9 @@
 
 import cx from 'classnames';
 import React from 'react';
-import {ThemeContext} from "components/context/Theme/Theme";
-
-import styles from './Main.scss';
 import Skills from "./Skills/Skills";
+import styles from './Main.scss';
+import {ThemeContext} from "components/context/Theme/Theme";
 import Toolbar from "./Toolbar/Toolbar";
 
 

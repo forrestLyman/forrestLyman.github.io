@@ -1,15 +1,15 @@
 @import '../../../styles/variables';
 @import '../../../styles/mixins';
 
-.main {
-  height: 100%;
-  width:100vw;
-  padding:5rem;
-  position: relative;
-}
-
-.mainContent{
-  margin-top: 40%;
+.avatar{
+  height: 10rem;
+  width: 10rem;
+  margin-bottom:2.5rem;
+  border-radius: 50%;
+  background-image: url('/images/me.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
 }
 
 .connect{
@@ -28,9 +28,27 @@
   }
 }
 
-.main-white{
-  @extend .main;
-  background: $white;
+.footer{
+  position: absolute;
+  bottom:5rem;
+  left:5rem;
+  right:5rem;
+}
+
+.lead{
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+}
+
+.main {
+  height: 100%;
+  width:100vw;
+  padding:5rem;
+  position: relative;
+}
+
+.mainContent{
+  margin-top: 40%;
 }
 
 .main-bluejeans{
@@ -43,27 +61,19 @@
   background: $grapefruit-dark;
 }
 
-
 .main-mint{
   @extend .main;
   background: $mint-dark;
 }
-
 
 .main-sunflower{
   @extend .main;
   background: $sunflower-dark;
 }
 
-.avatar{
-  height: 10rem;
-  width: 10rem;
-  margin-bottom:2.5rem;
-  border-radius: 50%;
-  background-image: url('/images/me.png');
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
+.main-white{
+  @extend .main;
+  background: $white;
 }
 
 .title{
@@ -77,18 +87,6 @@
     font-size: 2.8rem;
     text-transform: lowercase;
   }
-}
-
-.lead{
-  font-size: 1.8rem;
-  margin-bottom: 2.5rem;
-}
-
-.footer{
-  position: absolute;
-  bottom:5rem;
-  left:5rem;
-  right:5rem;
 }
 
 @include tablet{

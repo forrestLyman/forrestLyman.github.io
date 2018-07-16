@@ -1,34 +1,6 @@
 @import '../../../../styles/variables';
 @import '../../../../styles/mixins';
 
-.skills{
-  color:$white;
-  display: flex;
-  position: relative;
-}
-
-.skill{
-  button{
-    width:4rem;
-    height: 4rem;
-    margin-right: 1.5rem;
-    background: $black;
-    border: none;
-    border-radius: 50%;
-    overflow: hidden;
-    font-size: 2.1rem;
-    text-align: center;
-    padding-top:0;
-  }
-}
-
-.skillActive{
-  @extend .skill;
-  button{
-    background: $white;
-  }
-}
-
 .detail{
   visibility: hidden;
   opacity: 0;
@@ -75,4 +47,32 @@
     }
   }
 
+}
+
+.skills{
+  color:$white;
+  display: flex;
+  position: relative;
+}
+
+.skill{
+  button{
+    width:4rem;
+    height: 4rem;
+    margin-right: 1.5rem;
+    background: $black;
+    border: none;
+    border-radius: 50%;
+    overflow: hidden;
+    font-size: 2.1rem;
+    text-align: center;
+    padding-top:0;
+  }
+}
+
+.skillActive{
+  @extend .skill;
+  button{
+    background: $white;
+  }
 }

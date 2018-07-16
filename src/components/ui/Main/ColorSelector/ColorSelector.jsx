@@ -1,8 +1,9 @@
 /**
  * Created by forrestlyman on 7/12/18
  */
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import { faPalette } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react';
 import styles from './ColorSelector.scss';
 import {ThemeContext} from "components/context/Theme/Theme";

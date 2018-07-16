@@ -1,28 +1,6 @@
 @import '../../../../styles/variables';
 @import '../../../../styles/mixins';
 
-.colorSelector{
-  display: flex;
-  flex-direction: row;
-  height: 5rem;
-}
-
-.colorList{
-  display: flex;
-  position: absolute;
-  top:2.8rem;
-  right:0;
-  padding:1.5rem;
-  width:100%;
-  background: darken($darkgray-dark, .15);
-}
-
-.colorListHidden{
-  width:0;
-  overflow: hidden;
-  margin:0;
-}
-
 .colorButton{
   position: relative;
   border-radius: 50%;
@@ -45,13 +23,44 @@
   }
 }
 
-.colorLabel{
-  display: block;
-  font-size: 2.4rem;
-  height: 2.4rem;
-  margin: .3rem 0 0 0;
-  border:none;
-  background: none;
+.colorButton-bluejeans{
+  @extend .colorButton;
+  strong{
+    background: $bluejeans-dark;
+  }
+  em{
+    background: $bluejeans-light;
+  }
+}
+
+.colorButton-grapefruit{
+  @extend .colorButton;
+  strong{
+    background: $grapefruit-dark;
+  }
+  em{
+    background: $grapefruit-light;
+  }
+}
+
+.colorButton-mint{
+  @extend .colorButton;
+  strong{
+    background: $mint-dark;
+  }
+  em{
+    background: $mint-light;
+  }
+}
+
+.colorButton-sunflower{
+  @extend .colorButton;
+  strong{
+    background: $sunflower-dark;
+  }
+  em{
+    background: $sunflower-light;
+  }
 }
 
 .colorButton-white{
@@ -63,39 +72,34 @@
     background: $lightgray-dark;
   }
 }
-.colorButton-bluejeans{
-  @extend .colorButton;
-  strong{
-    background: $bluejeans-dark;
-  }
-  em{
-    background: $bluejeans-light;
-  }
+
+.colorLabel{
+  display: block;
+  font-size: 2.4rem;
+  height: 2.4rem;
+  margin: .3rem 0 0 0;
+  border:none;
+  background: none;
 }
-.colorButton-mint{
-  @extend .colorButton;
-  strong{
-    background: $mint-dark;
-  }
-  em{
-    background: $mint-light;
-  }
+
+.colorList{
+  display: flex;
+  position: absolute;
+  top:2.8rem;
+  right:0;
+  padding:1.5rem;
+  width:100%;
+  background: darken($darkgray-dark, .15);
 }
-.colorButton-sunflower{
-  @extend .colorButton;
-  strong{
-    background: $sunflower-dark;
-  }
-  em{
-    background: $sunflower-light;
-  }
+
+.colorListHidden{
+  width:0;
+  overflow: hidden;
+  margin:0;
 }
-.colorButton-grapefruit{
-  @extend .colorButton;
-  strong{
-    background: $grapefruit-dark;
-  }
-  em{
-    background: $grapefruit-light;
-  }
+
+.colorSelector{
+  display: flex;
+  flex-direction: row;
+  height: 5rem;
 }
