@@ -200,7 +200,7 @@ export default [
         ]
     },
     {
-        title: "Pro Zend Framework CMS",
+        title: "Zend CMS",
         client: "Apress",
         role: "Freelance Author",
         location: "New York, New York",
