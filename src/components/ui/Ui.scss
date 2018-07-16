@@ -4,19 +4,26 @@
 $height: 100vh;
 $width: 100vw;
 
-.default {
-}
-
-
-
-.main{
-}
-
 .aside{
   background: $darkgray-light;
 }
 
+.default {
+}
+
+.main{
+}
+
 @include tablet{
+  .aside{
+    flex: 1;
+    display: flex;
+  }
+
+  .col{
+    width: $tabletWidth / 2;
+  }
+
   .contentBody{
     height: 100vh;
     display: flex;
@@ -25,15 +32,6 @@ $width: 100vw;
   .main{
     flex: 1;
     display: flex;
-  }
-
-  .aside{
-    flex: 1;
-    display: flex;
-  }
-
-  .col{
-    width: $tabletWidth / 2;
   }
 
   .spacer{
