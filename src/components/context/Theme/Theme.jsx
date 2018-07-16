@@ -36,7 +36,6 @@ export class ThemeProvider extends React.Component {
     }
 
     setTheme = (theme) => {
-        console.log(theme);
         // default theme
         if(theme === null ) theme = this.state.current;
 

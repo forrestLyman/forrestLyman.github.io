@@ -20,7 +20,6 @@ class ResumeDetail extends React.Component {
 
     render (){
         const {item, onClose, open} = this.props;
-        console.log(open);
         const {detail} = this.state;
         const className = open ? styles.detailWrapperOpen : styles.detailWrapper;
         const iconClass = open ? styles.close : styles.open;
@@ -67,7 +66,7 @@ class ResumeDetail extends React.Component {
                                     <blockquote>{item.description}</blockquote>
                                     <ul className={styles.skills}>
                                         {item.highlights.map((highlight, key) => (
-                                            <li>
+                                            <li key={key}>
                                                 <div className={styles.icon}>
                                                     <FontAwesomeIcon icon={faCheck} />
                                                 </div>
