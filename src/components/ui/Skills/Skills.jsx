@@ -26,7 +26,7 @@ export default class Skills extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            detail: false
+            detail: 'node'
         }
         this.setWrapperRef = this.setWrapperRef.bind(this);
         this.handleClickOutside = this.handleClickOutside.bind(this);
@@ -62,55 +62,90 @@ export default class Skills extends React.Component {
             <ThemeContext.Consumer>
                 {({theme}) => (
                     <div className={styles.skills} ref={this.setWrapperRef}>
-                        <div className={styles.skill}>
-                            <button className={theme.color.light} onClick={() => this.setView('react')}>
-                                <FontAwesomeIcon icon={faReact} />
-                            </button>
-                            <div className={detail === 'react' ? styles.detailOpen : styles.detail}>
-                                <div className={styles.detailBody}>
-                                    <h2 className={theme.color.dark}>React</h2>
-                                    <p>I'm currently using React for most of my work. I was a strong Angular developer when
-                                    I started working with React, and at first it seemed very limited. It is, when compared to a full
-                                    framework, but this very limitation is also its greatest strength!</p>
-                                    <p>
-                                        React <strike>forces</strike> encourages you to think on very different terms, and ultimately provides an incredibly
-                                        concise path to developing decoupled code. There is no magic here, its just simple performant JavaScript, and I love it!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={styles.skill}>
-                            <button className={theme.color.light} onClick={() => this.setView('angular')}>
-                                <FontAwesomeIcon icon={faAngular} />
-                            </button>
-                            <div className={detail === 'angular' ? styles.detailOpen : styles.detail}>
-                                <h2 className={theme.color.dark}>Angular</h2>
-                                <p>this is the body content</p>
-                            </div>
-                        </div>
-                        <div className={styles.skill}>
-                            <button className={theme.color.light} onClick={() => this.setView('node')}>
-                                <FontAwesomeIcon icon={faNode} />
-                            </button>
-                            <div className={detail === 'node' ? styles.detailOpen : styles.detail}>
-                                <h2 className={theme.color.dark}>Node</h2>
-                                <p>this is the body content</p>
-                            </div>
+                        {this.reactSkill(theme)}
+                        {this.angularSkill(theme)}
+                        {this.nodeSkill(theme)}
+                        {this.teamSkill(theme)}
 
-                        </div>
-                        <div className={styles.skill}>
-                            <button className={theme.color.light} onClick={() => this.setView('node')}>
-                                <FontAwesomeIcon icon={faSitemap} />
-                            </button>
-                            <div className={detail === 'node' ? styles.detailOpen : styles.detail}>
-                                <h2 className={theme.color.dark}>Node</h2>
-                                <p>this is the body content</p>
-                            </div>
 
-                        </div>
                     </div>
                 )}
             </ThemeContext.Consumer>
+        )
+    }
+
+    reactSkill = (theme) => {
+        return (
+            <div className={styles.skill}>
+                <button className={theme.color.light} onClick={() => this.setView('react')}>
+                    <FontAwesomeIcon icon={faReact} />
+                </button>
+                <div className={this.state.detail === 'react' ? styles.detailOpen : styles.detail}>
+                    <div className={styles.detailBody}>
+                        <h2 className={theme.color.dark}>React</h2>
+                        <p>I'm currently using React for most of my work. Its unopinionated approach gives you a lot
+                            more options than a more comprehensive framework like Angular, making it a perfect
+                            choice for more creative applications and websites.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+
+    angularSkill = (theme) => {
+        return (
+            <div className={styles.skill}>
+                <button className={theme.color.light} onClick={() => this.setView('angular')}>
+                    <FontAwesomeIcon icon={faAngular} />
+                </button>
+                <div className={this.state.detail === 'angular' ? styles.detailOpen : styles.detail}>
+                    <div className={styles.detailBody}>
+                        <h2 className={theme.color.dark}>Angular</h2>
+                        <p>I focused exclusively on Angular and TypeScript development for a number of years, working on a daily basis
+                            with Angular 1-5. Its an amazing platform for building enterprise browser applications.</p>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+
+    nodeSkill = (theme) => {
+        return (
+            <div className={styles.skill}>
+                <button className={theme.color.light} onClick={() => this.setView('node')}>
+                    <FontAwesomeIcon icon={faNode} />
+                </button>
+                <div className={this.state.detail === 'node' ? styles.detailOpen : styles.detail}>
+                    <div className={styles.detailBody}>
+                        <h2 className={theme.color.dark}>Node / Express</h2>
+                        <p>JavaScript is my language of choice for custom API development, cloud functions, and server side rendering.
+                        I develop in the browser, then move more expensive operations back to the API. Using one language for both
+                            makes this exponentially easier.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        )
+    }
+
+    teamSkill = (theme) => {
+        return (
+            <div className={styles.skill}>
+                <button className={theme.color.light} onClick={() => this.setView('team')}>
+                    <FontAwesomeIcon icon={faSitemap} />
+                </button>
+                <div className={this.state.detail === 'team' ? styles.detailOpen : styles.detail}>
+                    <div className={styles.detailBody}>
+                        <h2 className={theme.color.dark}>React</h2>
+                        <p>I'm currently using React for most of my work. Its unopinionated approach gives you a lot
+                            more options than a more comprehensive framework like Angular, making it a perfect
+                            choice for creative applications.
+                        </p>
+                    </div>
+                </div>
+            </div>
         )
     }
 

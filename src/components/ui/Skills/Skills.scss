@@ -30,7 +30,7 @@
   background:$white;
   width:0;
   height: 0;
-  transition: width 1s linear;
+  transition: height 1s linear;
   &:before {
     content: "";
     position: absolute;
@@ -63,8 +63,8 @@
 
   @extend .detail;
   display: block;
-  width:32rem;
-  height: 48rem;
+  width:$desktopWidth / 2;
+  height: 22rem;
   > div{
     opacity: 1;
     transition-delay: 500ms;
@@ -72,11 +72,12 @@
     transition-duration: 500ms;
   }
   h2{
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 1rem 0;
   }
 
   p {
     margin: 0 0 1.5rem 0;
+    font-size: 1.6rem;
     color: $darkgray-light;
   }
 }
