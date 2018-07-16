@@ -12,11 +12,11 @@
 
   h2{
     text-transform: uppercase;
-    font-size: 3.2rem;
+    font-size: 2.4rem;
     margin:0 0 .5rem 0;
     small{
       margin-left:.5rem;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       color:$white;
     }
   }
@@ -24,6 +24,28 @@
   p{
     color: rgba($white, 0.6);
     margin:0;
+    font-size: 1.2rem;
+  }
+}
+
+@include  tablet{
+  .resumeItem {
+    padding:2.5rem;
+    border-bottom: $darker 1px solid;
+
+    h2{
+      font-size: 3.2rem;
+      margin:0 0 .5rem 0;
+      small{
+        margin-left:.5rem;
+        font-size: 1.6rem;
+        color:$white;
+      }
+    }
+
+    p{
+      font-size: 1.4rem;
+    }
   }
 }
 

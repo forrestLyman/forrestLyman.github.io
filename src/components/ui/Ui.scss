@@ -14,6 +14,11 @@ $width: 100vw;
 .main{
 }
 
+.contentBody{
+  height: 100vh;
+  width:100vw;
+}
+
 @include tablet{
   .aside{
     flex: 1;

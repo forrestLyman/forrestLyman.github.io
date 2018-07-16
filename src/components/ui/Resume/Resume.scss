@@ -2,7 +2,10 @@
 @import '../../../styles/mixins';
 
 .list {
+  width:100vw;
+}
+
+@include tablet{
   height: 100vh;
   overflow: auto;
-  position: relative;
 }

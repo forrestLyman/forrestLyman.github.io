@@ -77,30 +77,32 @@
   @extend .description;
   top:9%;
   transition:top .25s ease-out;
+  overflow-y: hidden;
 }
 
 .detail{
-  height: 100vh;
-  width:100%;
-  position: relative;
   background: darken($darkgray-dark, 5);
 }
 
 .detailWrapper{
-  position: fixed;
-  top:0;
-  right:0;
   overflow: hidden;
   width:0;
-  height: 100vh;
+  height: 100%;
+  position: fixed;
+  top:0;
+  bottom:0;
+  right:0;
+  margin:0;
+  padding:0;
   transition: width 500ms ease-out;
-  box-shadow: 12rem 8rem 4rem 2rem rgba(0, 0, 0, 0.4), 0 6px 50px 0 rgba(0, 0, 0, 0.3);
-  animation: glow 1s steps(3) 1;
+  //box-shadow: 12rem 8rem 4rem 2rem rgba(0, 0, 0, 0.4), 0 6px 50px 0 rgba(0, 0, 0, 0.3);
+  //animation: glow 1s steps(3) 1;
 }
 
 .detailWrapperOpen{
   @extend .detailWrapper;
-  width:$desktopWidth/2;
+  height: 100vh;
+  width:100vw;
 }
 
 .header{
@@ -186,4 +188,8 @@
   font-size: 4.8rem;
   padding:2.5rem 0 0 2.5rem;
   text-transform: uppercase;
+}
+
+@include tablet{
+
 }
