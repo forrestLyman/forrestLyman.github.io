@@ -16,12 +16,6 @@
     box-sizing: inherit;
   }
 
-  html,
-  body,
-  #__next {
-    height: 100%;
-  }
-
   body {
     background-color: $white;
     color: $black;
@@ -138,5 +132,14 @@
   min-height: 100vh;
   max-width: 100vw;
   overflow: hidden;
+}
+
+@include tablet{
+  html,
+  body,
+  #__next {
+    height: 100vh;
+    overflow: hidden;
+  }
 }
 
