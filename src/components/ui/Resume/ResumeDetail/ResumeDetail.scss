@@ -88,11 +88,12 @@
   position: fixed;
   top:0;
   bottom:0;
-  right:0;
+  right:-100%;
   margin:0;
   padding:0;
-  transition: width 500ms ease-out;
+  transition: right 500ms ease-out;
   height: 100vh;
+  width:100vw;
   @include background(1);
   box-shadow: 12rem 8rem 4rem 2rem rgba(0, 0, 0, 0.4), 0 6px 50px 0 rgba(0, 0, 0, 0.3);
   //animation: glow 1s steps(3) 1;
@@ -100,8 +101,7 @@
 
 .detailWrapperOpen{
   @extend .detailWrapper;
-  height: 100vh;
-  width:100vw;
+  right: 0;
 }
 
 .header{
@@ -209,7 +209,7 @@
     padding-top:8rem;
   }
 
-  .detailWrapperOpen{
+  .detailWrapper{
     width:$tabletWidth * .75;
   }
   .title{
