@@ -1,8 +1,11 @@
 forrestlyman.github.io
 ======================
 
-Thanks for checking out my site! I built this on React using `create-react-app`, with custom WebPack configuration for 
-sass module support.
+![Site Screenshot](public/images/forrestlyman-screenshot.png)
+
+Thanks for checking out my site, [https://forrestlyman.github.io](https://forrestlyman.github.io)! 
+
+I built this on React using `create-react-app`, with custom WebPack configuration for sass module support.
 
 Getting Started
 ---------------
