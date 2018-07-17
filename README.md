@@ -51,7 +51,7 @@ I like to keep the App component as lightweight as possible, so this case it jus
 
 The `Ui` component provides the theme context and sets the basic page layout.
 
-Withing this layout the application is organized into two sections:
+Within this layout the application is organized into two sections:
 
 * Main: the main content body with links to connect, the theme color selector, and a list of my core skill set.
 * Resume: this is my current portfolio, which loads data from the `/src/components/ui/Resume/resumeData.js` file
@@ -73,6 +73,6 @@ ___I'm going to add a Travis file shortly that will automatically build the `dev
 License
 ----------
 
-The work is licensed under [Creative Commons Attribution 4.0.](Creative Commons Attribution 4.0). Feel free to use it as
+The work is licensed under [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/). Feel free to use it as
 a template for your next awesome project, just please give attribution.
 
