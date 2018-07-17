@@ -56,7 +56,7 @@ export default [
         highlights: [
             "We built a React / NextJS based application that can render on the browser or Express server for SEO + caching",
             "We developed a custom Express / NextJS server to handle our unique needs while leveraging the core NextJS functionality",
-            "I integrated the site with the Contentful CMS API for the back end"
+            "We utilized the Contentful CMS API for the back end"
         ],
         tech: [
             "React",

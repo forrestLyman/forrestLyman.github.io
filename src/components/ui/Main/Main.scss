@@ -41,6 +41,10 @@
 }
 
 .license{
+  position: absolute;
+  bottom:2.5rem;
+  left:2.5rem;
+  right:2.5rem;
   display: flex;
   text-decoration: none;
   font-size: 1.2rem;
@@ -54,7 +58,7 @@
 .main {
   min-height: 100vh;
   width:100vw;
-  padding:2.5rem;
+  padding:2.5rem 2.5rem 5rem 2.5rem;
   position: relative;
 }
 
@@ -114,13 +118,6 @@
   .lead{
     font-size: 1.8rem;
     margin-bottom: 2.5rem;
-  }
-
-  .license{
-    position: absolute;
-    bottom:2.5rem;
-    left:2.5rem;
-    right:2.5rem;
   }
 }
 
