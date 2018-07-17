@@ -7,6 +7,7 @@ import {faSitemap} from "@fortawesome/free-solid-svg-icons/index";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PropTypes from 'prop-types';
 import React from 'react';
+import ReactGA from 'react-ga';
 import styles from './Skills.scss';
 import {ThemeContext} from "components/context/Theme/Theme";
 
@@ -19,6 +20,12 @@ export default class Skills extends React.Component {
         super(props);
         this.state = {
             detail: false
+        }
+    }
+
+    componentDidMount() {
+        if(this.state.detail) {
+            ReactGA.modalview('/skills/' + this.state.detail);
         }
     }
 

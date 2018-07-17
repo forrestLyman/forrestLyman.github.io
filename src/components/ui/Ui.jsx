@@ -6,6 +6,7 @@ import cx from 'classnames';
 import Main from './Main/Main';
 import PropTypes from 'prop-types';
 import React from 'react';
+import ReactGA from 'react-ga';
 import Resume from "./Resume/Resume";
 import styles from './Ui.scss';
 import {ThemeProvider, ThemeContext} from "components/context/Theme/Theme";
@@ -21,7 +22,8 @@ export default class Ui extends React.Component {
     }
 
     componentWillMount() {
-        // setup on the server
+        ReactGA.initialize('UA-122459553-1');
+        ReactGA.pageview(window.location.pathname);
     }
 
     componentDidMount() {

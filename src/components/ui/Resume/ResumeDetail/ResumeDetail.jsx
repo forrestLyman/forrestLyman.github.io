@@ -6,6 +6,7 @@ import { faChevronRight, faCheck, faEyeSlash } from '@fortawesome/free-solid-svg
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PropTypes from 'prop-types';
 import React from 'react';
+import ReactGA from 'react-ga';
 import styles from './ResumeDetail.scss';
 import {ThemeContext} from "components/context/Theme/Theme";
 
@@ -14,6 +15,12 @@ class ResumeDetail extends React.Component {
         super(props);
         this.state = {
             detail: false
+        }
+    }
+
+    componentDidMount() {
+        if(this.props.open) {
+            ReactGA.modalview('/resume/' + this.props.item.title);
         }
     }
 
