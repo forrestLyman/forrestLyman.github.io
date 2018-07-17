@@ -1,8 +1,8 @@
-Forrest Lyman
-=============
+forrestlyman.github.io
+======================
 
 Thanks for checking out my site! I built this on React using `create-react-app`, with custom WebPack configuration for 
-sass support.
+sass module support.
 
 Getting Started
 ---------------
@@ -17,6 +17,44 @@ Once you have cloned your fork you can run the site with NPM or Yarn:
     npm run start
 
 Once the testing server is running you can view the site at http://localhost:3000
+    
+Developing
+----------
+
+### Theme and Design
+
+I use SASS modules for the site styles, with two core stylesheets which define common variables and a collection of mixins.
+
+* /src/styles/variables.scss
+* /src/styles/mixins.scss
+
+Each component has a associated SASS file, while common theme attributes are managed with the Theme Context, which exposes
+methods to get and set the theme. The actual theme styles are predefined sass classes.
+
+```javascript
+const ThemedComponent = () => {
+    return (
+        <ThemeContext.Consumer>
+            {({theme}) => (
+                <div className={theme.background.dark}>
+                    <h2 className={theme.color.light}>Themed Component</h2>
+                </div>
+            )}
+        </ThemeContext.Consumer>
+    )
+}
+```
+
+### Components
+
+I like to keep the App component as lightweight as possible, so this case it just loads the `/src/components/ui/Ui` component.
+
+The `Ui` component provides the theme context and sets the basic page layout.
+
+Withing this layout the application is organized into two sections:
+
+* Main: the main content body with links to connect, the theme color selector, and a list of my core skill set.
+* Resume: this is my current portfolio, which loads data from the `/src/components/ui/Resume/resumeData.js` file
 
 Building and Deploying
 ----------------------
@@ -30,8 +68,11 @@ master branch:
 
     npm run deploy
     
-Developing
+___I'm going to add a Travis file shortly that will automatically build the `develop` when you push it.___
+    
+License
 ----------
 
-The site is organized in two sections; the main body content and my resume...
+The work is licensed under [Creative Commons Attribution 4.0.](Creative Commons Attribution 4.0). Feel free to use it as
+a template for your next awesome project, just please give attribution.
 
