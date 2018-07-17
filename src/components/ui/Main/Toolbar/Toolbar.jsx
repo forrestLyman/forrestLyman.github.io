@@ -3,7 +3,7 @@
  */
 
 import ColorSelector from 'components/ui/Main/ColorSelector/ColorSelector';
-import { faEnvelope, faCloudDownloadAlt } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faCloudDownloadAlt, faCode } from '@fortawesome/free-solid-svg-icons';
 import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react';
@@ -16,6 +16,7 @@ const Toolbar = (props) => {
             <a href="https://www.linkedin.com/in/forrestlyman/" rel="noopener noreferrer" target="_blank"> <FontAwesomeIcon icon={faLinkedin} /></a>
             <a href="mailto: forrestswork@gmail.com" rel="noopener noreferrer" target="_blank"> <FontAwesomeIcon icon={faEnvelope} /></a>
             <a href="https://docs.google.com/document/d/1ToCkb-CMW_79QBJY2h8opyYt-QEjStrSDbnYTl3CLvo/edit?usp=sharing" rel="noopener noreferrer" target="_blank"> <FontAwesomeIcon icon={faCloudDownloadAlt} /></a>
+            <a href="https://github.com/forrestLyman/forrestlyman.github.io/tree/develop" rel="noopener noreferrer" target="_blank"> <FontAwesomeIcon icon={faCode} /></a>
             <div className={styles.spacer}></div>
             <ColorSelector/>
         </div>
