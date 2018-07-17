@@ -22,6 +22,7 @@ class ResumeDetail extends React.Component {
         const {detail} = this.state;
         const className = open ? styles.detailWrapperOpen : styles.detailWrapper;
         const iconClass = open ? styles.close : styles.open;
+        const screenshotClass = open ? styles.screenshotScreenOpen : styles.screenshotScreen;
         return (
             <ThemeContext.Consumer>
                 {({theme}) => (
@@ -43,7 +44,7 @@ class ResumeDetail extends React.Component {
 
                             <div className={styles.screenshot}>
                                 {item.confidential &&
-                                    <div className={styles.confidential}>
+                                    <div className={cx(screenshotClass, styles.confidential)}>
                                         <FontAwesomeIcon icon={faEyeSlash} />
                                         <p>Sorry, this project is currently confidential.</p>
 
@@ -54,7 +55,7 @@ class ResumeDetail extends React.Component {
                                 }
 
                                 {item.screenshot &&
-                                    <div className={styles.screenshotScreen}>
+                                    <div className={screenshotClass}>
                                         <img src={item.screenshot} alt={item.title} />
                                     </div>
                                 }
