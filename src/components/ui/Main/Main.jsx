@@ -3,6 +3,8 @@
  */
 
 import cx from 'classnames';
+import {faCreativeCommons} from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react';
 import Skills from "./Skills/Skills";
 import styles from './Main.scss';
@@ -27,6 +29,10 @@ const Main = () => {
 
                         <Skills />
                     </div>
+                    <a className={styles.license} rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+                        <FontAwesomeIcon icon={faCreativeCommons} />
+                        <span>Like this site? Feel free to fork it and create something of your own!</span>
+                    </a>
                 </main>
             )}
         </ThemeContext.Consumer>

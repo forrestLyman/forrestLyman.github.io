@@ -40,6 +40,22 @@
   margin: .5rem 0 2.5rem 0;
 }
 
+.license{
+  position: absolute;
+  bottom:2.5rem;
+  left:2.5rem;
+  right:2.5rem;
+  display: flex;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color:rgba($white, 0.5);
+  svg{
+    font-size: 3.6rem;
+    color:$black;
+    margin-right: 1.5rem;
+  }
+}
+
 .main {
   min-height: 100vh;
   width:100vw;
