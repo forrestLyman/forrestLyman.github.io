@@ -193,11 +193,14 @@
 }
 
 @include tablet{
+  .detailWrapperOpen{
+    width:$tabletWidth * .75;
+  }
   .title{
     margin:0;
     color:$white;
     font-size: 4.8rem;
-    padding:2.5rem 0 0 2.5rem;
+    padding:0;
     text-transform: uppercase;
   }
 }

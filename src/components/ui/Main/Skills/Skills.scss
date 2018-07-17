@@ -75,6 +75,18 @@
 }
 
 @include tablet{
+  .detail{
+    position: absolute;
+    right:$tabletWidth / 2;
+    width:$tabletWidth / 2;
+    bottom:6.5rem;
+    min-height: 32rem;
+    background:$white;
+  }
+  .detailOpen{
+    right:0;
+    transition: right .25s ease-out;
+  }
   .skill{
     button{
       width:5rem;
