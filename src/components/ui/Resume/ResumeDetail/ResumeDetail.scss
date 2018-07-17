@@ -91,7 +91,9 @@
   margin:0;
   padding:0;
   transition: width 500ms ease-out;
-  //box-shadow: 12rem 8rem 4rem 2rem rgba(0, 0, 0, 0.4), 0 6px 50px 0 rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  @include background(1);
+  box-shadow: 12rem 8rem 4rem 2rem rgba(0, 0, 0, 0.4), 0 6px 50px 0 rgba(0, 0, 0, 0.3);
   //animation: glow 1s steps(3) 1;
 }
 

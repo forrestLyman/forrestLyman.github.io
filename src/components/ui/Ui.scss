@@ -54,9 +54,3 @@ $width: 100vw;
     margin:0 auto;
   }
 }
-
-@include largeDesktop{
-  .col{
-    width: $largeDesktopWidth / 2;
-  }
-}

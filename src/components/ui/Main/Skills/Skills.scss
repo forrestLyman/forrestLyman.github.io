@@ -99,3 +99,30 @@
   }
 
 }
+
+@include desktop{
+  .detail{
+    position: absolute;
+    right:50vw;
+    width:$desktopWidth / 2;
+    bottom:6.5rem;
+    min-height: 32rem;
+    background:$white;
+    transition: right .25s ease-out;
+  }
+  .detailOpen{
+    right:0;
+    transition: right .25s ease-out;
+  }
+  .skill{
+    button{
+      width:5rem;
+      height: 5rem;
+      margin-right: 1.5rem;
+      font-size: 2.8rem;
+      text-align: center;
+      padding-top:.2rem;
+    }
+  }
+
+}
